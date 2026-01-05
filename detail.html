@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport"content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Outbound Pantai</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-pantai">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">
+      OutboundPantai
+    </a>
+
+    <button class="navbar-toggler" type="button"
+      data-bs-toggle="collapse" data-bs-target="#navbarPantai">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarPantai">
+      <ul class="navbar-nav ms-auto text-center text-lg-start">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="program.html">Program</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+             <a class="nav-link" href="tentang.html">Tentang</a>
+        </li>
+        <li class="nav-item">
+             <a class="nav-link" href="blog.html">Blog</a>
+        </li>
+        <li class="nav-item mt-3 mt-lg-0 ms-lg-3">
+          <a class="btn btn-warning rounded-pill px-4 w-100"
+             href="booking.html">
+            Booking
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<style>
+   /* NAVBAR FIX MOBILE */
+.navbar-pantai {
+  background: #0b1d2a;   /* WARNA SOLID (ANTI GOYANG) */
+  height: 64px;          /* TINGGI FIX */
+  padding: 0;            /* JANGAN BERUBAH */
+  transition: background-color 0.3s ease;
+}
+
+.navbar-pantai .container {
+  height: 64px;
+}
+
+.navbar-pantai .navbar-brand,
+.navbar-pantai .navbar-toggler {
+  line-height: 64px;
+}
+
+.navbar-pantai .nav-link {
+  color: #fff;
+  font-weight: 500;
+}
+
+.navbar-pantai .nav-link:hover {
+  color: #ffc107;
+}
+
+/* MOBILE COLLAPSE */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: #0b1d2a;
+    padding: 15px;
+  }
+}
+
+
+</style>
+
+<!-- PAGE TITLE / HERO -->
+<section class="page-hero-outbound">
+  <div class="hero-overlay"></div>
+
+  <div class="container hero-content text-center">
+    <h1>Detail & Produk</h1>
+    <p>Outbound pantai seru, aman, dan membangun kekompakan tim.</p>
+
+    <div class="breadcrumb-custom">
+      <a href="#">Home</a> <span>/</span> <span>Outbound Pantai</span>
+    </div>
+  </div>
+</section>
+
+<style>
+    /* PAGE HERO OUTBOUND */
+.page-hero-outbound {
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80')
+    center center / cover no-repeat;
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Overlay gelap */
+.page-hero-outbound .hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+/* Content */
+.page-hero-outbound .hero-content {
+  position: relative;
+  color: #fff;
+  z-index: 2;
+  max-width: 800px;
+}
+
+.page-hero-outbound h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.page-hero-outbound p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+/* Breadcrumb */
+.breadcrumb-custom {
+  font-size: 0.95rem;
+}
+
+.breadcrumb-custom a {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+.breadcrumb-custom span {
+  margin: 0 5px;
+  color: #ddd;
+}
+
+/* TABLET */
+@media (max-width: 991px) {
+  .page-hero-outbound {
+    height: 360px;
+  }
+
+  .page-hero-outbound h1 {
+    font-size: 2.4rem;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 575px) {
+  .page-hero-outbound {
+    height: 300px;
+  }
+
+  .page-hero-outbound h1 {
+    font-size: 2rem;
+  }
+
+  .page-hero-outbound p {
+    font-size: 0.95rem;
+  }
+}
+
+</style>
+
+<!-- PRODUK OUTBOUND PANTAI -->
+<section id="produk-outbound" class="py-5 bg-light">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <h2 class="fw-semibold">Produk Outbound Pantai</h2>
+      <p class="text-muted">
+        Pilihan program outbound pantai dengan harga terjangkau dan pelayanan profesional
+      </p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- PRODUK 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="produk-card h-100">
+          <img src="img/pantai4.avif"
+               alt="Outbound Pantai Fun"
+               class="produk-img">
+
+          <div class="produk-body">
+            <h5>Outbound Pantai Fun</h5>
+            <p class="produk-desc">
+              Program outbound santai dengan permainan seru dan kebersamaan
+              di area pantai terbuka.
+            </p>
+
+            <div class="produk-harga">
+              Mulai dari <span>Rp 75.000 / orang</span>
+            </div>
+
+            <a href="https://wa.me/6282211221909?text=Halo%20saya%20ingin%20pesan%20Outbound%20Pantai%20Fun"
+               target="_blank"
+               class="btn btn-primary w-100 rounded-pill">
+              Pesan via WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUK 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="produk-card h-100 produk-unggulan">
+          <img src="img/ou2.jpg"
+               alt="Outbound Pantai Team Building"
+               class="produk-img">
+
+          <div class="produk-body">
+            <h5>Outbound Pantai Team Building</h5>
+            <p class="produk-desc">
+              Fokus pada kekompakan tim, komunikasi, dan kerjasama
+              melalui permainan pantai.
+            </p>
+
+            <div class="produk-harga">
+              Mulai dari <span>Rp 120.000 / orang</span>
+            </div>
+
+            <a href="https://wa.me/6282211221909?text=Halo%20saya%20ingin%20pesan%20Outbound%20Pantai%20Team%20Building"
+               target="_blank"
+               class="btn btn-primary w-100 rounded-pill">
+              Pesan via WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUK 3 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="produk-card h-100">
+          <img src="img/pantai7.avif"
+               alt="Outbound Pantai Adventure"
+               class="produk-img">
+
+          <div class="produk-body">
+            <h5>Outbound Pantai Adventure</h5>
+            <p class="produk-desc">
+              Program outbound penuh tantangan, cocok untuk tim muda
+              dan aktivitas luar ruang.
+            </p>
+
+            <div class="produk-harga">
+              Mulai dari <span>Rp 175.000 / orang</span>
+            </div>
+
+            <a href="https://wa.me/6282211221909?text=Halo%20saya%20ingin%20pesan%20Outbound%20Pantai%20Team%20Building"
+               target="_blank"
+               class="btn btn-primary w-100 rounded-pill">
+              Pesan via WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+    .produk-card {
+  background: #ffffff;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 14px 35px rgba(0,0,0,.1);
+  height: 100%;
+}
+
+.produk-unggulan {
+  border: 2px solid #0d6efd;
+}
+
+.produk-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.produk-body {
+  padding: 24px;
+  text-align: center;
+}
+
+.produk-body h5 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.produk-desc {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.produk-harga {
+  font-size: 15px;
+  margin-bottom: 18px;
+}
+
+.produk-harga span {
+  font-weight: 600;
+  color: #0d6efd;
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+  .produk-img {
+    height: 200px;
+  }
+
+  .produk-body {
+    padding: 20px;
+  }
+}
+
+</style>
+
+<!-- DETAIL OUTBOUND -->
+<section id="detail-outbound" class="py-5">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <h2 class="fw-semibold">Detail Kegiatan Outbound Pantai</h2>
+      <p class="text-muted">
+        Gambaran lengkap pelaksanaan outbound pantai dari awal hingga akhir
+      </p>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-lg-6">
+        <div class="detail-box">
+          <h5>Konsep Kegiatan</h5>
+          <p>
+            Outbound pantai menggabungkan permainan kelompok, tantangan ringan,
+            dan aktivitas kebersamaan yang dilakukan di area pantai terbuka.
+            Program dirancang untuk menciptakan suasana santai namun tetap
+            membangun kekompakan dan komunikasi peserta.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="detail-box">
+          <h5>Jenis Aktivitas</h5>
+          <p>
+            Aktivitas meliputi ice breaking, fun games pantai, team building,
+            simulasi kerjasama, serta permainan berbasis strategi dan kreativitas
+            yang disesuaikan dengan karakter peserta.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="detail-box">
+          <h5>Durasi Kegiatan</h5>
+          <p>
+            Durasi outbound pantai bersifat fleksibel, mulai dari setengah hari
+            hingga program satu hari penuh, tergantung kebutuhan dan tujuan
+            kegiatan.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="detail-box">
+          <h5>Peserta</h5>
+          <p>
+            Program ini cocok untuk perusahaan, sekolah, instansi, komunitas,
+            hingga keluarga dengan jumlah peserta kecil maupun besar.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="detail-box">
+          <h5>Keamanan & Pendampingan</h5>
+          <p>
+            Seluruh kegiatan dipandu oleh instruktur berpengalaman dengan
+            penerapan standar keamanan yang ketat serta briefing sebelum
+            aktivitas dimulai.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="detail-box">
+          <h5>Lokasi & Waktu Pelaksanaan</h5>
+          <p>
+            Kegiatan dilaksanakan di area pantai yang aman dan nyaman,
+            dengan penyesuaian waktu agar cuaca mendukung dan aktivitas berjalan
+            optimal.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+    .detail-box {
+  background: #ffffff;
+  padding: 28px 26px;
+  border-radius: 20px;
+  box-shadow: 0 12px 32px rgba(0,0,0,.08);
+  height: 100%;
+}
+
+.detail-box h5 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.detail-box p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+  .detail-box {
+    padding: 24px 20px;
+  }
+
+  .detail-box h5 {
+    font-size: 17px;
+  }
+}
+
+</style>
+
+<!-- DETAIL PRODUK -->
+<section id="detail-produk" class="py-5 bg-light">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <h2 class="fw-semibold">Detail Produk Outbound Pantai</h2>
+      <p class="text-muted">
+        Informasi lengkap layanan outbound pantai yang kami tawarkan
+      </p>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-lg-6">
+        <div class="produk-box">
+          <h5>Nama Produk</h5>
+          <p>
+            Outbound Pantai merupakan layanan kegiatan luar ruang
+            yang menggabungkan permainan kebersamaan, tantangan kelompok,
+            dan suasana pantai yang menyenangkan.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="produk-box">
+          <h5>Tujuan Produk</h5>
+          <p>
+            Produk ini dirancang untuk meningkatkan kekompakan,
+            komunikasi, kepercayaan diri, serta mempererat hubungan
+            antar peserta dalam suasana santai dan positif.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="produk-box">
+          <h5>Ruang Lingkup Layanan</h5>
+          <p>
+            Layanan mencakup perencanaan program, penyediaan instruktur,
+            peralatan permainan, pelaksanaan kegiatan, serta evaluasi
+            sederhana setelah kegiatan selesai.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="produk-box">
+          <h5>Durasi & Jadwal</h5>
+          <p>
+            Durasi kegiatan fleksibel, mulai dari setengah hari hingga
+            satu hari penuh, dengan penyesuaian jadwal sesuai kebutuhan
+            dan kondisi lapangan.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="produk-box">
+          <h5>Jumlah Peserta</h5>
+          <p>
+            Produk outbound pantai dapat diikuti oleh peserta dalam
+            jumlah kecil maupun besar, dengan pembagian kelompok
+            yang disesuaikan agar kegiatan tetap efektif.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="produk-box">
+          <h5>Keamanan & Standar Pelaksanaan</h5>
+          <p>
+            Seluruh kegiatan dijalankan dengan standar keamanan yang
+            jelas, briefing awal, serta pendampingan instruktur
+            berpengalaman selama program berlangsung.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="produk-box">
+          <h5>Lokasi Pelaksanaan</h5>
+          <p>
+            Kegiatan dilaksanakan di area pantai yang telah diseleksi
+            berdasarkan faktor keamanan, kenyamanan, dan kelayakan
+            untuk aktivitas outbound.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="produk-box">
+          <h5>Penyesuaian Program</h5>
+          <p>
+            Program outbound pantai dapat disesuaikan dengan tujuan
+            perusahaan, sekolah, komunitas, maupun acara khusus
+            seperti gathering atau family day.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+    .produk-box {
+  background: #ffffff;
+  padding: 28px 26px;
+  border-radius: 20px;
+  box-shadow: 0 12px 32px rgba(0,0,0,.08);
+  height: 100%;
+}
+
+.produk-box h5 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.produk-box p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+  .produk-box {
+    padding: 24px 20px;
+  }
+
+  .produk-box h5 {
+    font-size: 17px;
+  }
+}
+
+</style>
+
+
+<!-- FOOTER -->
+<footer class="footer-pantai">
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- HALAMAN 1 -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="footer-title">🌴 Outbound Pantai</h5>
+        <p class="footer-text">
+          Penyedia outbound pantai profesional dengan konsep
+          team building, fun games, dan adventure.
+        </p>
+      </div>
+
+      <!-- HALAMAN 2 -->
+      <div class="col-lg-3 col-md-6">
+        <h6 class="footer-title">Program</h6>
+        <ul class="footer-menu">
+          <li><a href="#program">Team Building</a></li>
+          <li><a href="#program">Fun Games Pantai</a></li>
+          <li><a href="#program">Outbound Sekolah</a></li>
+          <li><a href="#program">Corporate Outing</a></li>
+        </ul>
+      </div>
+
+      <!-- HALAMAN 3 -->
+      <div class="col-lg-3 col-md-6">
+        <h6 class="footer-title">Galeri</h6>
+        <ul class="footer-menu">
+          <li><a href="#gallery">Foto Outbound</a></li>
+          <li><a href="#gallery">Video Kegiatan</a></li>
+          <li><a href="#">Artikel Outbound</a></li>
+          <li><a href="#">Testimoni</a></li>
+        </ul>
+      </div>
+
+      <!-- HALAMAN 4 -->
+      <div class="col-lg-3 col-md-6">
+        <h6 class="footer-title">Kontak</h6>
+        <p class="footer-text mb-2">
+          <i class="bi bi-whatsapp"></i> 0822-1122-1909
+        </p>
+        <p class="footer-text mb-3">
+          Pantai Jawa Timur
+        </p>
+        <a href="https://wa.me/6282211221909"
+           class="btn btn-warning rounded-pill w-100">
+          Booking Sekarang
+        </a>
+      </div>
+
+    </div>
+
+    <hr class="footer-line">
+
+    <div class="text-center footer-copy">
+      © 2026 Outbound Pantai · All Rights Reserved
+    </div>
+  </div>
+</footer>
+
+
+<style>
+   .footer-pantai {
+  background: #0b1d2a;
+  color: #ccc;
+  padding: 60px 0 30px;
+  font-size: 14px;
+}
+
+.footer-title {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.footer-text {
+  line-height: 1.7;
+}
+
+.footer-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-menu li {
+  margin-bottom: 8px;
+}
+
+.footer-menu a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-menu a:hover {
+  color: #ffc107;
+}
+
+.footer-line {
+  border-color: rgba(255,255,255,.1);
+  margin: 30px 0 20px;
+}
+
+.footer-copy {
+  font-size: 13px;
+  color: #aaa;
+}
+
+
+</style>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport"content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Outbound Pantai</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-pantai">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">
+      OutboundPantai
+    </a>
+
+    <button class="navbar-toggler" type="button"
+      data-bs-toggle="collapse" data-bs-target="#navbarPantai">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarPantai">
+      <ul class="navbar-nav ms-auto text-center text-lg-start">
+        <li class="nav-item">
+          <a class="nav-link" href="">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="program.html">Program</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+             <a class="nav-link" href="tentang.html">Tentang</a>
+        </li>
+        <li class="nav-item">
+             <a class="nav-link" href="#hero">Blog</a>
+        </li>
+        <li class="nav-item mt-3 mt-lg-0 ms-lg-3">
+          <a class="btn btn-warning rounded-pill px-4 w-100"
+             href="booking.html">
+            Booking
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<style>
+   /* NAVBAR FIX MOBILE */
+.navbar-pantai {
+  background: #0b1d2a;   /* WARNA SOLID (ANTI GOYANG) */
+  height: 64px;          /* TINGGI FIX */
+  padding: 0;            /* JANGAN BERUBAH */
+  transition: background-color 0.3s ease;
+}
+
+.navbar-pantai .container {
+  height: 64px;
+}
+
+.navbar-pantai .navbar-brand,
+.navbar-pantai .navbar-toggler {
+  line-height: 64px;
+}
+
+.navbar-pantai .nav-link {
+  color: #fff;
+  font-weight: 500;
+}
+
+.navbar-pantai .nav-link:hover {
+  color: #ffc107;
+}
+
+/* MOBILE COLLAPSE */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: #0b1d2a;
+    padding: 15px;
+  }
+}
+
+
+</style>
+
+<!-- PAGE TITLE / HERO -->
+<section class="page-hero-outbound">
+  <div class="hero-overlay"></div>
+
+  <div class="container hero-content text-center">
+    <h1>Booking</h1>
+    <p>Outbound pantai seru, aman, dan membangun kekompakan tim.</p>
+
+    <div class="breadcrumb-custom">
+      <a href="#">Home</a> <span>/</span> <span>Outbound Pantai</span>
+    </div>
+  </div>
+</section>
+
+<style>
+    /* PAGE HERO OUTBOUND */
+.page-hero-outbound {
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80')
+    center center / cover no-repeat;
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Overlay gelap */
+.page-hero-outbound .hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+/* Content */
+.page-hero-outbound .hero-content {
+  position: relative;
+  color: #fff;
+  z-index: 2;
+  max-width: 800px;
+}
+
+.page-hero-outbound h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.page-hero-outbound p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+/* Breadcrumb */
+.breadcrumb-custom {
+  font-size: 0.95rem;
+}
+
+.breadcrumb-custom a {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+.breadcrumb-custom span {
+  margin: 0 5px;
+  color: #ddd;
+}
+
+/* TABLET */
+@media (max-width: 991px) {
+  .page-hero-outbound {
+    height: 360px;
+  }
+
+  .page-hero-outbound h1 {
+    font-size: 2.4rem;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 575px) {
+  .page-hero-outbound {
+    height: 300px;
+  }
+
+  .page-hero-outbound h1 {
+    font-size: 2rem;
+  }
+
+  .page-hero-outbound p {
+    font-size: 0.95rem;
+  }
+}
+</style>
+
+<!-- BOOKING OUTBOUND PANTAI -->
+<section id="booking" class="booking-pantai py-5">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <!-- INFO -->
+      <div class="col-lg-6">
+        <h2 class="fw-bold mb-4">Booking Outbound Pantai Sekarang</h2>
+        <p>
+          Wujudkan pengalaman outbound pantai yang seru, aman, dan berkesan
+          bersama tim profesional kami. Cocok untuk perusahaan, sekolah,
+          komunitas, maupun keluarga besar.
+        </p>
+
+        <ul class="list-unstyled booking-list mt-4">
+          <li>✔ Program bisa custom sesuai kebutuhan</li>
+          <li>✔ Fasilitator berpengalaman</li>
+          <li>✔ Lokasi pantai pilihan & nyaman</li>
+          <li>✔ Aman & terorganisir</li>
+        </ul>
+      </div>
+
+      <!-- FORM -->
+      <div class="col-lg-6">
+        <div class="booking-form">
+          <h5 class="fw-semibold mb-4">Form Booking</h5>
+
+          <form id="bookingForm">
+            <div class="mb-3">
+              <input type="text" name="nama" class="form-control"
+                placeholder="Nama Lengkap" required>
+            </div>
+
+            <div class="mb-3">
+              <input type="tel" name="wa" class="form-control"
+                placeholder="No. WhatsApp" required>
+            </div>
+
+            <div class="mb-3">
+              <input type="email" name="email" class="form-control"
+                placeholder="Email">
+            </div>
+
+            <div class="mb-3">
+              <input type="date" name="tanggal" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+              <select name="program" class="form-select" required>
+                <option value="">Pilih Jenis Program</option>
+                <option>Fun Games Pantai</option>
+                <option>Team Building Pantai</option>
+                <option>Leadership Outbound</option>
+                <option>Outbound Custom</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <textarea name="catatan" class="form-control" rows="3"
+                placeholder="Jumlah peserta & catatan tambahan"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100 py-2">
+              Booking Sekarang
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- STYLE -->
+<style>
+.booking-pantai {
+  background: linear-gradient(135deg, #f8fbff, #ffffff);
+}
+
+.booking-list li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #444;
+}
+
+.booking-form {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 22px;
+  box-shadow: 0 15px 40px rgba(0,0,0,.1);
+}
+
+.booking-form .form-control,
+.booking-form .form-select {
+  border-radius: 12px;
+  padding: 12px;
+}
+</style>
+
+<!-- SCRIPT WHATSAPP -->
+<script>
+document.getElementById("bookingForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const nama = this.nama.value;
+  const wa = this.wa.value;
+  const email = this.email.value;
+  const tanggal = this.tanggal.value;
+  const program = this.program.value;
+  const catatan = this.catatan.value;
+
+  const pesan =
+`Halo Admin 👋
+Saya ingin booking outbound pantai dengan detail berikut:
+
+Nama: ${nama}
+No WhatsApp: ${wa}
+Email: ${email}
+Tanggal: ${tanggal}
+Program: ${program}
+Catatan: ${catatan}
+
+Terima kasih 🙏`;
+
+  const nomorWA = "6282211221909";
+  const url = "https://wa.me/" + nomorWA + "?text=" + encodeURIComponent(pesan);
+
+  window.open(url, "_blank");
+});
+</script>
+
+
+
+
+
+
+<!-- FOOTER -->
+<footer class="footer-pantai">
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- HALAMAN 1 -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="footer-title">🌴 Outbound Pantai</h5>
+        <p class="footer-text">
+          Penyedia outbound pantai profesional dengan konsep
+          team building, fun games, dan adventure.
+        </p>
+      </div>
+
+      <!-- HALAMAN 2 -->
+      <div class="col-lg-3 col-md-6">
+        <h6 class="footer-title">Program</h6>
+        <ul class="footer-menu">
+          <li><a href="#program">Team Building</a></li>
+          <li><a href="#program">Fun Games Pantai</a></li>
+          <li><a href="#program">Outbound Sekolah</a></li>
+          <li><a href="#program">Corporate Outing</a></li>
+        </ul>
+      </div>
+
+      <!-- HALAMAN 3 -->
+      <div class="col-lg-3 col-md-6">
+        <h6 class="footer-title">Galeri</h6>
+        <ul class="footer-menu">
+          <li><a href="#gallery">Foto Outbound</a></li>
+          <li><a href="#gallery">Video Kegiatan</a></li>
+          <li><a href="#">Artikel Outbound</a></li>
+          <li><a href="#">Testimoni</a></li>
+        </ul>
+      </div>
+
+      <!-- HALAMAN 4 -->
+      <div class="col-lg-3 col-md-6">
+        <h6 class="footer-title">Kontak</h6>
+        <p class="footer-text mb-2">
+          <i class="bi bi-whatsapp"></i> 0822-1122-1909
+        </p>
+        <p class="footer-text mb-3">
+          Pantai Jawa Timur
+        </p>
+        <a href="https://wa.me/6282211221909"
+           class="btn btn-warning rounded-pill w-100">
+          Booking Sekarang
+        </a>
+      </div>
+
+    </div>
+
+    <hr class="footer-line">
+
+    <div class="text-center footer-copy">
+      © 2026 Outbound Pantai · All Rights Reserved
+    </div>
+  </div>
+</footer>
+
+
+<style>
+   .footer-pantai {
+  background: #0b1d2a;
+  color: #ccc;
+  padding: 60px 0 30px;
+  font-size: 14px;
+}
+
+.footer-title {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.footer-text {
+  line-height: 1.7;
+}
+
+.footer-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-menu li {
+  margin-bottom: 8px;
+}
+
+.footer-menu a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-menu a:hover {
+  color: #ffc107;
+}
+
+.footer-line {
+  border-color: rgba(255,255,255,.1);
+  margin: 30px 0 20px;
+}
+
+.footer-copy {
+  font-size: 13px;
+  color: #aaa;
+}
+
+
+</style>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

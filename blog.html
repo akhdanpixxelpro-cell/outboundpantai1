@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport"content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Outbound Pantai</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-pantai">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">
+      OutboundPantai
+    </a>
+
+    <button class="navbar-toggler" type="button"
+      data-bs-toggle="collapse" data-bs-target="#navbarPantai">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarPantai">
+      <ul class="navbar-nav ms-auto text-center text-lg-start">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="program.html">Program</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+             <a class="nav-link" href="tentang.html">Tentang</a>
+        </li>
+        <li class="nav-item">
+             <a class="nav-link" href="blog.html">Blog</a>
+        </li>
+        <li class="nav-item mt-3 mt-lg-0 ms-lg-3">
+          <a class="btn btn-warning rounded-pill px-4 w-100"
+             href="booking.html">
+            Booking
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<style>
+   /* NAVBAR FIX MOBILE */
+.navbar-pantai {
+  background: #0b1d2a;   /* WARNA SOLID (ANTI GOYANG) */
+  height: 64px;          /* TINGGI FIX */
+  padding: 0;            /* JANGAN BERUBAH */
+  transition: background-color 0.3s ease;
+}
+
+.navbar-pantai .container {
+  height: 64px;
+}
+
+.navbar-pantai .navbar-brand,
+.navbar-pantai .navbar-toggler {
+  line-height: 64px;
+}
+
+.navbar-pantai .nav-link {
+  color: #fff;
+  font-weight: 500;
+}
+
+.navbar-pantai .nav-link:hover {
+  color: #ffc107;
+}
+
+/* MOBILE COLLAPSE */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: #0b1d2a;
+    padding: 15px;
+  }
+}
+
+
+</style>
+
+<!-- PAGE TITLE / HERO -->
+<section class="page-hero-outbound">
+  <div class="hero-overlay"></div>
+
+  <div class="container hero-content text-center">
+    <h1>Blog</h1>
+    <p>Outbound pantai seru, aman, dan membangun kekompakan tim.</p>
+
+    <div class="breadcrumb-custom">
+      <a href="#">Home</a> <span>/</span> <span>Outbound Pantai</span>
+    </div>
+  </div>
+</section>
+
+<style>
+    /* PAGE HERO OUTBOUND */
+.page-hero-outbound {
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80')
+    center center / cover no-repeat;
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Overlay gelap */
+.page-hero-outbound .hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+/* Content */
+.page-hero-outbound .hero-content {
+  position: relative;
+  color: #fff;
+  z-index: 2;
+  max-width: 800px;
+}
+
+.page-hero-outbound h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.page-hero-outbound p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+/* Breadcrumb */
+.breadcrumb-custom {
+  font-size: 0.95rem;
+}
+
+.breadcrumb-custom a {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+.breadcrumb-custom span {
+  margin: 0 5px;
+  color: #ddd;
+}
+
+/* TABLET */
+@media (max-width: 991px) {
+  .page-hero-outbound {
+    height: 360px;
+  }
+
+  .page-hero-outbound h1 {
+    font-size: 2.4rem;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 575px) {
+  .page-hero-outbound {
+    height: 300px;
+  }
+
+  .page-hero-outbound h1 {
+    font-size: 2rem;
+  }
+
+  .page-hero-outbound p {
+    font-size: 0.95rem;
+  }
+}
+</style>
+
+<!-- BLOG OUTBOUND PANTAI -->
+<section id="blog" class="blog-pantai py-5 bg-light">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Blog Outbound Pantai</h2>
+      <p class="text-muted">
+        Blog inspiratif, tips, dan cerita seru seputar outbound pantai
+      </p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- BLOG ITEM 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-card h-100">
+          <img src="img/pantai4.avif"
+               alt="Outbound Pantai Seru" class="img-fluid blog-img">
+          <div class="blog-content">
+            <span class="blog-date">12 Januari 2026</span>
+            <h5>Keseruan Outbound Pantai yang Tak Terlupakan</h5>
+            <p>
+              Outbound pantai menghadirkan pengalaman penuh tawa, kebersamaan,
+              dan energi positif di tepi laut.
+            </p>
+            <a href="ka1.html" class="read-more">Baca Selengkapnya →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- BLOG ITEM 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-card h-100">
+          <img src="img/photo-1500530855697-b586d89ba3ee.avif"
+               alt="Team Building Pantai" class="img-fluid blog-img">
+          <div class="blog-content">
+            <span class="blog-date">5 Januari 2026</span>
+            <h5>Manfaat Team Building di Pantai</h5>
+            <p>
+              Lingkungan pantai membantu meningkatkan komunikasi,
+              kekompakan, dan semangat kerja tim.
+            </p>
+            <a href="ka2.html" class="read-more">Baca Selengkapnya →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- BLOG ITEM 3 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-card h-100">
+          <img src="img/pantai7.avif"
+               alt="Tips Outbound Pantai" class="img-fluid blog-img">
+          <div class="blog-content">
+            <span class="blog-date">28 Desember 2025</span>
+            <h5>Tips Sukses Mengadakan Outbound Pantai</h5>
+            <p>
+              Simak tips memilih lokasi, games, dan konsep agar outbound
+              pantai berjalan aman dan menyenangkan.
+            </p>
+            <a href="ka3.html" class="read-more">Baca Selengkapnya →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- BUTTON -->
+    <div class="text-center mt-5">
+      <a href="blog2.html" class="btn btn-outline-primary px-4 py-2">
+        Lihat Semua
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<style>
+    /* BLOG */
+.blog-card {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,.08);
+  transition: transform .3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-8px);
+}
+
+.blog-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 20px;
+}
+
+.blog-date {
+  font-size: 13px;
+  color: #0d6efd;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.blog-content h5 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.blog-content p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.read-more {
+  font-weight: 500;
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+</style>
+
+
+
+<!-- FOOTER -->
+<footer class="footer-pantai">
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- HALAMAN 1 -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="footer-title">🌴 Outbound Pantai</h5>
+        <p class="footer-text">
+          Penyedia outbound pantai profesional dengan konsep
+          team building, fun games, dan adventure.
+        </p>
+      </div>
+
+      <!-- HALAMAN 2 -->
+      <div class="col-lg-3 col-md-6">
+        <h6 class="footer-title">Program</h6>
+        <ul class="footer-menu">
+          <li><a href="#program">Team Building</a></li>
+          <li><a href="#program">Fun Games Pantai</a></li>
+          <li><a href="#program">Outbound Sekolah</a></li>
+          <li><a href="#program">Corporate Outing</a></li>
+        </ul>
+      </div>
+
+      <!-- HALAMAN 3 -->
+      <div class="col-lg-3 col-md-6">
+        <h6 class="footer-title">Galeri</h6>
+        <ul class="footer-menu">
+          <li><a href="#gallery">Foto Outbound</a></li>
+          <li><a href="#gallery">Video Kegiatan</a></li>
+          <li><a href="#">Artikel Outbound</a></li>
+          <li><a href="#">Testimoni</a></li>
+        </ul>
+      </div>
+
+      <!-- HALAMAN 4 -->
+      <div class="col-lg-3 col-md-6">
+        <h6 class="footer-title">Kontak</h6>
+        <p class="footer-text mb-2">
+          <i class="bi bi-whatsapp"></i> 0822-1122-1909
+        </p>
+        <p class="footer-text mb-3">
+          Pantai Jawa Timur
+        </p>
+        <a href="https://wa.me/6282211221909"
+           class="btn btn-warning rounded-pill w-100">
+          Booking Sekarang
+        </a>
+      </div>
+
+    </div>
+
+    <hr class="footer-line">
+
+    <div class="text-center footer-copy">
+      © 2026 Outbound Pantai · All Rights Reserved
+    </div>
+  </div>
+</footer>
+
+
+<style>
+   .footer-pantai {
+  background: #0b1d2a;
+  color: #ccc;
+  padding: 60px 0 30px;
+  font-size: 14px;
+}
+
+.footer-title {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.footer-text {
+  line-height: 1.7;
+}
+
+.footer-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-menu li {
+  margin-bottom: 8px;
+}
+
+.footer-menu a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-menu a:hover {
+  color: #ffc107;
+}
+
+.footer-line {
+  border-color: rgba(255,255,255,.1);
+  margin: 30px 0 20px;
+}
+
+.footer-copy {
+  font-size: 13px;
+  color: #aaa;
+}
+
+
+</style>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
