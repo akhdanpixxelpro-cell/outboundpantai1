@@ -184,6 +184,34 @@
 }
 </style>
 
+<!-- SEARCH BLOG -->
+<div class="blog-search mb-5 text-center">
+  <input type="text" id="blogSearch"
+         class="form-control blog-search-input"
+         placeholder="Cari artikel outbound pantai...">
+</div>
+
+<style>
+  .blog-search {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.blog-search-input {
+  padding: 14px 18px;
+  border-radius: 30px;
+  font-size: 15px;
+  border: 1px solid #ddd;
+}
+
+.blog-search-input:focus {
+  border-color: #0d6efd;
+  box-shadow: none;
+}
+
+</style>
+
+
 <!-- BLOG OUTBOUND PANTAI -->
 <section id="blog" class="blog-pantai py-5 bg-light">
   <div class="container">
@@ -198,7 +226,7 @@
     <div class="row g-4">
 
       <!-- BLOG ITEM 1 -->
-      <div class="col-lg-4 col-md-6">
+      <div class="col-lg-4 col-md-6 blog-item">
         <div class="blog-card h-100">
           <img src="img/pantai4.avif"
                alt="Outbound Pantai Seru" class="img-fluid blog-img">
@@ -215,7 +243,7 @@
       </div>
 
       <!-- BLOG ITEM 2 -->
-      <div class="col-lg-4 col-md-6">
+      <div class="col-lg-4 col-md-6 blog-item">
         <div class="blog-card h-100">
           <img src="img/photo-1500530855697-b586d89ba3ee.avif"
                alt="Team Building Pantai" class="img-fluid blog-img">
@@ -232,7 +260,7 @@
       </div>
 
       <!-- BLOG ITEM 3 -->
-      <div class="col-lg-4 col-md-6">
+    <div class="col-lg-4 col-md-6 blog-item">
         <div class="blog-card h-100">
           <img src="img/pantai7.avif"
                alt="Tips Outbound Pantai" class="img-fluid blog-img">
@@ -314,7 +342,17 @@
 
 </style>
 
+<script>
+document.getElementById("blogSearch").addEventListener("keyup", function () {
+  let keyword = this.value.toLowerCase();
+  let blogs = document.querySelectorAll(".blog-item");
 
+  blogs.forEach(function (blog) {
+    let text = blog.innerText.toLowerCase();
+    blog.style.display = text.includes(keyword) ? "" : "none";
+  });
+});
+</script>
 
 <!-- FOOTER -->
 <footer class="footer-pantai">
