@@ -97,7 +97,7 @@
     .hero-pantai {
       background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
       url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-      min-height: 100vh;
+      min-height: 90vh;
       color: #fff;
       display: flex;
       align-items: center;
@@ -251,8 +251,8 @@
       </p>
     </div>
 
-    <div class="row g-4">
-
+    <!-- Item 1 -->
+    <div class="row align-items-center g-4 mb-4">
       <div class="col-lg-6">
         <div class="keunggulan-box">
           <h5>Suasana Alam yang Menyegarkan</h5>
@@ -262,7 +262,13 @@
           </p>
         </div>
       </div>
+      <div class="col-lg-6">
+        <img src="img/sungai1 (1).jpg" class="keunggulan-img" alt="">
+      </div>
+    </div>
 
+    <!-- Item 2 -->
+    <div class="row align-items-center g-4 mb-4 flex-lg-row-reverse">
       <div class="col-lg-6">
         <div class="keunggulan-box">
           <h5>Meningkatkan Kekompakan Tim</h5>
@@ -272,7 +278,13 @@
           </p>
         </div>
       </div>
+      <div class="col-lg-6">
+        <img src="img/kelompok1.jpg" class="keunggulan-img" alt="">
+      </div>
+    </div>
 
+    <!-- Item 3 -->
+    <div class="row align-items-center g-4 mb-4">
       <div class="col-lg-6">
         <div class="keunggulan-box">
           <h5>Area Luas dan Fleksibel</h5>
@@ -282,7 +294,13 @@
           </p>
         </div>
       </div>
+      <div class="col-lg-6">
+        <img src="img/bagus1.jpg" class="keunggulan-img" alt="">
+      </div>
+    </div>
 
+    <!-- Item 4 -->
+    <div class="row align-items-center g-4 mb-4 flex-lg-row-reverse">
       <div class="col-lg-6">
         <div class="keunggulan-box">
           <h5>Program Disesuaikan Kebutuhan</h5>
@@ -292,7 +310,13 @@
           </p>
         </div>
       </div>
+      <div class="col-lg-6">
+        <img src="img/bagus2.jpg" class="keunggulan-img" alt="">
+      </div>
+    </div>
 
+    <!-- Item 5 -->
+    <div class="row align-items-center g-4 mb-4">
       <div class="col-lg-6">
         <div class="keunggulan-box">
           <h5>Aman dan Dipandu Profesional</h5>
@@ -302,7 +326,13 @@
           </p>
         </div>
       </div>
+      <div class="col-lg-6">
+        <img src="img/orang.jpg" class="keunggulan-img" alt="">
+      </div>
+    </div>
 
+    <!-- Item 6 -->
+    <div class="row align-items-center g-4 flex-lg-row-reverse">
       <div class="col-lg-6">
         <div class="keunggulan-box">
           <h5>Pengalaman Berkesan</h5>
@@ -312,19 +342,20 @@
           </p>
         </div>
       </div>
-
+      <div class="col-lg-6">
+        <img src="img/orang2.jpg" class="keunggulan-img" alt="">
+      </div>
     </div>
+
   </div>
 </section>
 
-
 <style>
-  .keunggulan-box {
+.keunggulan-box {
   background: #ffffff;
   padding: 26px 24px;
   border-radius: 18px;
   box-shadow: 0 10px 30px rgba(0,0,0,.08);
-  height: 100%;
 }
 
 .keunggulan-box h5 {
@@ -340,201 +371,242 @@
   margin: 0;
 }
 
-/* MOBILE */
-@media (max-width: 576px) {
-  .keunggulan-box {
-    padding: 22px 20px;
-  }
-
-  .keunggulan-box h5 {
-    font-size: 17px;
-  }
+.keunggulan-img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.12);
 }
 
+/* MOBILE */
+@media (max-width: 576px) {
+  .keunggulan-img {
+    height: 220px;
+  }
+}
 </style>
 
-<!-- PAKET OUTBOUND PANTAI -->
-<section id="paket-outbound-pantai" class="paket-section py-5">
-  <div class="container">
-
-    <!-- TITLE -->
-    <div class="text-center mb-5">
-      <h2 class="paket-title">Paket Outbound Pantai</h2>
-      <p class="paket-subtitle">
-        Pilihan paket outbound pantai terbaik untuk perusahaan, sekolah,
-        komunitas, dan gathering keluarga dengan konsep seru dan berkesan.
-      </p>
-    </div>
-
-    <div class="row g-4">
-
-      <!-- PAKET 1 -->
-      <div class="col-lg-4 col-md-6">
-        <div class="paket-card h-100">
-          <h3>Paket Fun Outbound Pantai</h3>
-          <p class="paket-desc">
-            Cocok untuk acara santai dan kebersamaan. Diisi dengan fun games,
-            ice breaking, dan permainan pantai yang ringan serta menyenangkan.
-          </p>
-          <ul class="paket-list">
-            <li>Ice Breaking & Fun Games</li>
-            <li>MC & Fasilitator</li>
-            <li>Peralatan Games</li>
-            <li>Dokumentasi Foto</li>
-          </ul>
-          <a href="https://wa.me/6282211221909"
-             target="_blank"
-             class="btn-wa">
-            Pesan via WhatsApp
-          </a>
-        </div>
-      </div>
-
-      <!-- PAKET 2 -->
-      <div class="col-lg-4 col-md-6">
-        <div class="paket-card h-100 paket-rekomendasi">
-          <h3>Paket Team Building Pantai</h3>
-          <p class="paket-desc">
-            Dirancang untuk meningkatkan kekompakan, komunikasi,
-            dan kerjasama tim melalui outbound pantai yang terstruktur.
-          </p>
-          <ul class="paket-list">
-            <li>Team Building Games</li>
-            <li>Leadership & Problem Solving</li>
-            <li>Trainer Profesional</li>
-            <li>Sound System & Dokumentasi</li>
-          </ul>
-          <a href="https://wa.me/6282211221909"
-             target="_blank"
-             class="btn-wa">
-            Konsultasi WhatsApp
-          </a>
-        </div>
-      </div>
-
-      <!-- PAKET 3 -->
-      <div class="col-lg-4 col-md-6">
-        <div class="paket-card h-100">
-          <h3>Paket Adventure Outbound Pantai</h3>
-          <p class="paket-desc">
-            Paket outbound pantai penuh tantangan dan keseruan
-            untuk peserta yang ingin pengalaman lebih aktif dan menantang.
-          </p>
-          <ul class="paket-list">
-            <li>Fun Challenge & Adventure Games</li>
-            <li>Simulasi Kerjasama Tim</li>
-            <li>Instruktur Berpengalaman</li>
-            <li>Asuransi Kegiatan</li>
-          </ul>
-          <a href="https://wa.me/6282211221909"
-             target="_blank"
-             class="btn-wa">
-            Booking Sekarang
-          </a>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section>
 
 <style>
-  .paket-section {
-  background: #ffffff;
+    .beach-outbound-section {
+        /* Tema Warna Biru Tua Profesional */
+        --navy-dark: #001d3d;
+        --navy-medium: #003566;
+        --accent-blue: #00a8e8;
+        --wa-green: #25d366;
+        --white: #ffffff;
+        
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 80px 20px;
+        /* Background Gambar dengan Overlay Biru Tua */
+        background: linear-gradient(rgba(0, 29, 61, 0.9), rgba(0, 53, 102, 0.9)), 
+                    url('img/pantai7.avif');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: var(--white);
+    }
+
+    .wrapper { max-width: 1100px; margin: 0 auto; }
+    
+    .title-area { text-align: center; margin-bottom: 60px; }
+    .title-area h2 { 
+        font-size: 2.8rem; 
+        color: var(--white); 
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 800;
+    }
+    .title-area p { color: #cbd5e0; font-size: 1.1rem; }
+
+    .package-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 30px;
+    }
+
+    .package-card {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px); /* Efek kaca modern */
+        border-radius: 24px;
+        padding: 40px 30px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        display: flex;
+        flex-direction: column;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .package-card:hover { 
+        transform: translateY(-15px); 
+        background: rgba(255, 255, 255, 0.1);
+        border-color: var(--accent-blue);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+    
+    /* Ikon & Header Kartu */
+    .main-icon {
+        width: 80px; height: 80px;
+        background: var(--navy-medium);
+        border-radius: 50%;
+        display: flex; align-items: center; justify-content: center;
+        font-size: 2.2rem; color: var(--accent-blue);
+        margin: 0 auto 20px;
+        border: 2px solid rgba(0, 168, 232, 0.3);
+    }
+
+    .pkg-name { font-size: 1.6rem; font-weight: 700; text-align: center; color: var(--white); }
+    .pkg-price { text-align: center; font-size: 2.2rem; color: var(--accent-blue); font-weight: 800; margin: 15px 0; }
+    .pkg-price span { font-size: 1rem; color: #a0aec0; font-weight: 400; }
+
+    /* List Item */
+    .feature-list { list-style: none; padding: 0; margin-bottom: 35px; flex-grow: 1; }
+    .feature-list li { 
+        padding: 12px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        display: flex; align-items: center; font-size: 0.95rem; color: #e2e8f0;
+    }
+    .feature-list li i { 
+        width: 25px; color: var(--accent-blue); 
+        margin-right: 15px; font-size: 1.1rem;
+    }
+
+    /* Tombol WhatsApp Premium */
+    .btn-wa {
+        display: flex; align-items: center; justify-content: center; gap: 12px;
+        background: var(--wa-green); color: #fff; text-decoration: none;
+        padding: 16px; border-radius: 14px; font-weight: bold; 
+        font-size: 1.05rem; transition: 0.3s;
+        box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+    }
+    .btn-wa:hover { background: #1ebe57; transform: scale(1.05); box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5); }
+
+    /* Floating WA */
+    .floating-wa {
+        position: fixed; bottom: 30px; right: 30px;
+        background: var(--wa-green); color: white; width: 65px; height: 65px;
+        border-radius: 50%; display: flex; align-items: center; justify-content: center;
+        font-size: 35px; box-shadow: 0 8px 25px rgba(0,0,0,0.4); z-index: 999;
+        transition: 0.3s; text-decoration: none;
+    }
+    .floating-wa:hover { transform: rotate(15deg) scale(1.1); }
+
+    /* =========================
+   MOBILE ANTI GOYANG FIX
+   ========================= */
+@media (max-width: 768px) {
+
+    /* Matikan efek berat */
+    .package-card {
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        transform: none !important;
+        transition: none !important;
+        box-shadow: none !important;
+        will-change: auto !important;
+    }
+
+    .package-card:hover {
+        transform: none !important;
+        box-shadow: none !important;
+    }
+
+    /* Hilangkan render bug scroll */
+    .beach-outbound-section,
+    .package-grid,
+    .package-card {
+        animation: none !important;
+    }
+
+    /* Background FIXED bikin jitter di HP */
+    .beach-outbound-section {
+        background-attachment: scroll !important;
+    }
+
+    /* Paksa GPU stabil */
+    .package-card * {
+        transform: translateZ(0);
+        backface-visibility: hidden;
+    }
 }
 
-.paket-title {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 12px;
+/* Extra safety untuk device kecil */
+@media (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+    }
 }
 
-.paket-subtitle {
-  max-width: 760px;
-  margin: 0 auto;
-  font-size: 16px;
-  color: #555;
+@media (hover: hover) and (pointer: fine) {
+    .package-card:hover {
+        transform: translateY(-15px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
 }
 
-.paket-card {
-  position: relative;
-  background: #f8f9fa;
-  padding: 30px 26px;
-  border-radius: 22px;
-  box-shadow: 0 15px 35px rgba(0,0,0,.08);
-}
-
-.paket-card h3 {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.paket-desc {
-  font-size: 15px;
-  color: #555;
-  line-height: 1.7;
-  margin-bottom: 14px;
-}
-
-.paket-list {
-  padding-left: 18px;
-  margin-bottom: 22px;
-}
-
-.paket-list li {
-  font-size: 14.5px;
-  color: #444;
-  margin-bottom: 6px;
-}
-
-.btn-wa {
-  display: inline-block;
-  background: #25d366;
-  color: #fff;
-  text-decoration: none;
-  padding: 12px 22px;
-  border-radius: 50px;
-  font-weight: 600;
-  transition: transform .2s ease, box-shadow .2s ease;
-}
-
-.btn-wa:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(37,211,102,.4);
-  color: #fff;
-}
-
-/* REKOMENDASI */
-.paket-rekomendasi {
-  background: #eaf6ff;
-}
-
-.badge-rekomendasi {
-  position: absolute;
-  top: -12px;
-  right: 20px;
-  background: #0d6efd;
-  color: #fff;
-  padding: 6px 14px;
-  border-radius: 30px;
-  font-size: 13px;
-  font-weight: 600;
-}
-
-/* MOBILE */
-@media (max-width: 576px) {
-  .paket-title {
-    font-size: 24px;
-  }
-
-  .paket-card {
-    padding: 24px 20px;
-  }
-}
-
+    
 </style>
+
+<section class="beach-outbound-section">
+    <div class="wrapper">
+        <div class="title-area">
+            <h2>Premium Beach Outbound</h2>
+            <p>Eksklusifitas dan Kenyamanan untuk Team Building Perusahaan Anda</p>
+        </div>
+
+        <div class="package-grid">
+            <div class="package-card">
+                <div class="main-icon"><i class="fas fa-umbrella-beach"></i></div>
+                <h3 class="pkg-name">Silver Coast</h3>
+                <div class="pkg-price">150K <span>/pax</span></div>
+                <ul class="feature-list">
+                    <li><i class="fas fa-flag-checkered"></i> 5 Fun Games Kompetitif</li>
+                    <li><i class="fas fa-microphone-alt"></i> Game Master Profesional</li>
+                    <li><i class="fas fa-utensils"></i> Makan Siang Premium Box</li>
+                    <li><i class="fas fa-bottle-water"></i> Free Flow Mineral Water</li>
+                    <li><i class="fas fa-medkit"></i> Tim Medis Lapangan</li>
+                </ul>
+                <a href="https://wa.me/6282211221909?text=Halo,%20saya%20tertarik%20paket%20Silver%20Coast" class="btn-wa">
+                    <i class="fab fa-whatsapp"></i> Booking via WA
+                </a>
+            </div>
+
+            <div class="package-card" style="border-color: var(--accent-blue); background: rgba(0, 168, 232, 0.05);">
+                <div class="main-icon" style="background: var(--accent-blue); color: var(--navy-dark);"><i class="fas fa-star"></i></div>
+                <h3 class="pkg-name">Gold Team Work</h3>
+                <div class="pkg-price">350K <span>/pax</span></div>
+                <ul class="feature-list">
+                    <li><i class="fas fa-users"></i> Full Team Building System</li>
+                    <li><i class="fas fa-buffet"></i> Makan Siang Prasmanan</li>
+                    <li><i class="fas fa-camera"></i> Dokumentasi Foto & Video</li>
+                    <li><i class="fas fa-scroll"></i> Banner Vinyl 4x1 Meter</li>
+                    <li><i class="fas fa-tshirt"></i> Kaos Jersey Dry-Fit</li>
+                </ul>
+                <a href="https://wa.me/6282211221909?text=Halo,%20saya%20tertarik%20paket%20Gold%20Team" class="btn-wa">
+                    <i class="fab fa-whatsapp"></i> Booking via WA
+                </a>
+            </div>
+
+            <div class="package-card">
+                <div class="main-icon"><i class="fas fa-gem"></i></div>
+                <h3 class="pkg-name">Platinum Luxury</h3>
+                <div class="pkg-price">750K <span>/pax</span></div>
+                <ul class="feature-list">
+                    <li><i class="fas fa-hotel"></i> Resort Bintang 4 (Day Use)</li>
+                    <li><i class="fas fa-ship"></i> Yacht / Kapal Jelajah</li>
+                    <li><i class="fas fa-fire"></i> BBQ Dinner & Api Unggun</li>
+                    <li><i class="fas fa-bus-alt"></i> Bus Pariwisata Eksekutif</li>
+                    <li><i class="fas fa-helicopter"></i> Drone Video Cinematic</li>
+                </ul>
+                <a href="https://wa.me/6282211221909?text=Halo,%20saya%20tertarik%20paket%20Platinum%20Luxury" class="btn-wa">
+                    <i class="fab fa-whatsapp"></i> Booking via WA
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 
 <!-- LANJUTAN DETAIL OUTBOUND PANTAI -->
 <section id="detail-outbound-pantai" class="detail-section py-5">
@@ -592,167 +664,125 @@
 </section>
 
 <style>
-  /* DETAIL OUTBOUND */
-.detail-section {
+  /* =========================
+   DETAIL OUTBOUND PANTAI
+   PROFESSIONAL & SAFE
+   ========================= */
+#detail-outbound-pantai {
   background: #f8f9fa;
+  padding: 70px 0;
 }
 
-.detail-title {
-  font-size: 30px;
+#detail-outbound-pantai .detail-title {
+  font-size: 32px;
   font-weight: 700;
+  margin-bottom: 18px;
+  color: #111;
+}
+
+#detail-outbound-pantai .detail-desc {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.85;
   margin-bottom: 14px;
 }
 
-.detail-desc {
-  font-size: 15.5px;
-  color: #555;
-  line-height: 1.8;
-  margin-bottom: 12px;
-}
-
-.detail-list {
+#detail-outbound-pantai .detail-list {
   padding-left: 18px;
-  margin: 18px 0 26px;
+  margin: 22px 0 32px;
 }
 
-.detail-list li {
-  font-size: 15px;
+#detail-outbound-pantai .detail-list li {
+  font-size: 15.5px;
   color: #444;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
-.detail-btn {
+/* BUTTON AREA */
+#detail-outbound-pantai .detail-btn {
   display: flex;
-  gap: 14px;
+  gap: 16px;
+  align-items: center;
   flex-wrap: wrap;
 }
 
-.btn-detail {
+#detail-outbound-pantai .btn-detail {
   background: #0d6efd;
   color: #fff;
   text-decoration: none;
-  padding: 12px 22px;
+  padding: 13px 26px;
   border-radius: 50px;
   font-weight: 600;
+  transition: background 0.25s ease;
 }
 
-.btn-detail:hover {
+#detail-outbound-pantai .btn-detail:hover {
   background: #0b5ed7;
   color: #fff;
 }
 
-/* MOBILE AMAN */
-@media (max-width: 576px) {
-  .detail-title {
-    font-size: 24px;
-  }
-
-  .detail-btn {
-    flex-direction: column;
-  }
-
-  .btn-detail,
-  .btn-wa {
-    text-align: center;
-    width: 100%;
-  }
-}
-
-</style>
-
-<!-- MANFAAT OUTBOUND TANPA ICON -->
-<section id="manfaat" class="manfaat-outbound py-5 bg-light">
-  <div class="container">
-
-    <div class="text-center mb-5">
-      <h2 class="fw-bold">Manfaat Outbound</h2>
-      <p class="text-muted">
-        Berbagai manfaat positif yang dapat dirasakan setelah mengikuti kegiatan outbound
-      </p>
-    </div>
-
-    <div class="row g-4">
-
-      <div class="col-lg-4 col-md-6">
-        <div class="manfaat-box h-100">
-          <h5>Meningkatkan Kerjasama Tim</h5>
-          <p>
-            Kegiatan outbound melatih peserta untuk bekerja sama, saling
-            mendukung, dan menyelesaikan tantangan secara bersama-sama.
-          </p>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6">
-        <div class="manfaat-box h-100">
-          <h5>Melatih Komunikasi</h5>
-          <p>
-            Melalui interaksi dan permainan kelompok, peserta belajar
-            berkomunikasi secara efektif dan terbuka.
-          </p>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6">
-        <div class="manfaat-box h-100">
-          <h5>Meningkatkan Kepercayaan Diri</h5>
-          <p>
-            Outbound mendorong peserta keluar dari zona nyaman sehingga
-            rasa percaya diri dan keberanian meningkat.
-          </p>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6">
-        <div class="manfaat-box h-100">
-          <h5>Melatih Kepemimpinan</h5>
-          <p>
-            Peserta dilatih untuk mengambil keputusan, memimpin kelompok,
-            dan bertanggung jawab dalam setiap aktivitas.
-          </p>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6">
-        <div class="manfaat-box h-100">
-          <h5>Mengurangi Stres</h5>
-          <p>
-            Suasana alam dan kegiatan menyenangkan membantu menyegarkan
-            pikiran serta meningkatkan semangat.
-          </p>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6">
-        <div class="manfaat-box h-100">
-          <h5>Membangun Kebersamaan</h5>
-          <p>
-            Pengalaman outbound menciptakan hubungan yang lebih dekat
-            dan rasa kebersamaan antar peserta.
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<style>
-  .manfaat-box {
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 18px;
-  box-shadow: 0 12px 30px rgba(0,0,0,.08);
-}
-
-.manfaat-box h5 {
+#detail-outbound-pantai .btn-wa {
+  background: #25d366;
+  color: #fff;
+  text-decoration: none;
+  padding: 13px 26px;
+  border-radius: 50px;
   font-weight: 600;
-  margin-bottom: 10px;
+}
+
+/* IMAGE */
+#detail-outbound-pantai img {
+  border-radius: 18px;
+}
+
+/* =========================
+   MOBILE VERSION – CLEAN & PRO
+   ========================= */
+@media (max-width: 576px) {
+
+  #detail-outbound-pantai {
+    padding: 50px 0;
+  }
+
+  #detail-outbound-pantai .detail-title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  #detail-outbound-pantai .detail-desc {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  #detail-outbound-pantai .detail-list {
+    margin: 18px 0 26px;
+  }
+
+  #detail-outbound-pantai .detail-list li {
+    font-size: 14.8px;
+  }
+
+  #detail-outbound-pantai .detail-btn {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  #detail-outbound-pantai .btn-detail,
+  #detail-outbound-pantai .btn-wa {
+    width: 100%;
+    text-align: center;
+    padding: 14px;
+    font-size: 15px;
+  }
+
+  #detail-outbound-pantai img {
+    margin-top: 10px;
+  }
 }
 
 
 </style>
+
 
 <!-- GALLERY -->
 <section class="gallery py-5 bg-light">
