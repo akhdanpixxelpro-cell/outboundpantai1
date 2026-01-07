@@ -145,7 +145,7 @@
     .cta {
       background: linear-gradient(135deg, #0d6efd, #0dcaf0);
       color: #fff;
-      border-radius: 30px;
+      border-radius: 40px;
     }
 
     footer {
@@ -205,6 +205,7 @@
 }
 
 .welcome-title {
+  color: #25d366;
   font-size: 42px;
   font-weight: 700;
   line-height: 1.2;
@@ -269,7 +270,7 @@
     <div class="row align-items-center g-4 mb-4">
       <div class="col-lg-6">
         <div class="keunggulan-box">
-          <h5>Suasana Alam yang Menyegarkan</h5>
+          <h3>Suasana Alam yang Menyegarkan</h3>
           <p>
             Pantai memberikan udara segar, pemandangan luas, dan suara ombak
             yang membantu peserta merasa lebih rileks dan nyaman selama kegiatan.
@@ -285,7 +286,7 @@
     <div class="row align-items-center g-4 mb-4 flex-lg-row-reverse">
       <div class="col-lg-6">
         <div class="keunggulan-box">
-          <h5>Meningkatkan Kekompakan Tim</h5>
+          <h3>Meningkatkan Kekompakan Tim</h3>
           <p>
             Aktivitas outbound pantai dirancang untuk melatih kerjasama,
             komunikasi, serta rasa saling percaya antar peserta.
@@ -301,7 +302,7 @@
     <div class="row align-items-center g-4 mb-4">
       <div class="col-lg-6">
         <div class="keunggulan-box">
-          <h5>Area Luas dan Fleksibel</h5>
+          <h3>Area Luas dan Fleksibel</h3>
           <p>
             Area pantai yang luas memungkinkan berbagai jenis permainan
             tanpa batas ruang, sehingga kegiatan lebih leluasa dan variatif.
@@ -317,7 +318,7 @@
     <div class="row align-items-center g-4 mb-4 flex-lg-row-reverse">
       <div class="col-lg-6">
         <div class="keunggulan-box">
-          <h5>Program Disesuaikan Kebutuhan</h5>
+          <h3>Program Disesuaikan Kebutuhan</h3>
           <p>
             Materi outbound dapat disesuaikan dengan tujuan perusahaan,
             sekolah, komunitas, maupun keluarga.
@@ -333,7 +334,7 @@
     <div class="row align-items-center g-4 mb-4">
       <div class="col-lg-6">
         <div class="keunggulan-box">
-          <h5>Aman dan Dipandu Profesional</h5>
+          <h3>Aman dan Dipandu Profesional</h3>
           <p>
             Seluruh kegiatan dipandu instruktur berpengalaman dengan
             standar keamanan yang terjaga.
@@ -349,7 +350,7 @@
     <div class="row align-items-center g-4 flex-lg-row-reverse">
       <div class="col-lg-6">
         <div class="keunggulan-box">
-          <h5>Pengalaman Berkesan</h5>
+          <h3>Pengalaman Berkesan</h3>
           <p>
             Kombinasi aktivitas seru dan suasana pantai menciptakan
             pengalaman outbound yang sulit dilupakan.
@@ -564,7 +565,7 @@
 <section class="beach-outbound-section">
     <div class="wrapper">
         <div class="title-area">
-            <h2>Premium Beach Outbound</h2>
+            <h2 style="color: #0dcaf0;">Premium Beach Outbound</h2>
             <p>Eksklusifitas dan Kenyamanan untuk Team Building Perusahaan Anda</p>
         </div>
 
@@ -833,6 +834,11 @@
   </div>
 </section>
 
+<a href="galeri.html" class="btn-lihat-paket">
+  Lanjut 
+</a>
+
+
 <style>
     /* GALLERY SECTION */
 .gallery {
@@ -864,6 +870,34 @@
 @media (max-width: 575px) {
   .gallery img {
     height: 200px;
+  }
+}
+
+.btn-lihat-paket {
+  display: inline-block;
+  padding: 14px 36px;
+  background: linear-gradient(135deg, #0d6efd, #1e88ff);
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 999px; /* pill */
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(13,110,253,.35);
+  transition: all .3s ease;
+}
+.btn-lihat-paket {
+  display: block;
+  width: fit-content;
+  margin: 20px auto; /* INI yang bikin ke tengah */
+}
+
+
+/* hover desktop */
+@media (hover: hover) {
+  .btn-lihat-paket:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 35px rgba(13,110,253,.45);
+    color: #fff;
   }
 }
 
@@ -1096,7 +1130,7 @@
       <div class="col-lg-3 col-md-6">
         <h6 class="footer-title">Galeri</h6>
         <ul class="footer-menu">
-          <li><a href="portfolio.html">Portfolio Outbound</a></li>
+          <li><a href="galeri.html">Galeri Outbound</a></li>
           <li><a href="blog.html">Artikel Outbound</a></li>
         </ul>
       </div>
