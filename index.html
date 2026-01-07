@@ -102,68 +102,82 @@
 
 </style>
 
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-    }
-
-    /* Hero Section */
-    .hero-pantai {
-      background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
-      url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-      min-height: 53vh;
-      color: #fff;
-      display: flex;
-      align-items: center;
-    }
-
-    .hero-pantai h1 {
-      font-size: 2rem;
-      font-weight: 100;
-    }
-
-    /* Program Card */
-    .program-card {
-      border: none;
-      border-radius: 20px;
-      box-shadow: 0 15px 40px rgba(0,0,0,.1);
-      transition: .3s;
-    }
-
-    .program-card:hover {
-      transform: translateY(-10px);
-    }
-
-    /* Gallery */
-    .gallery img {
-      border-radius: 20px;
-      height: 250px;
-      object-fit: cover;
-    }
-
-    /* CTA */
-    .cta {
-      background: linear-gradient(135deg, #0d6efd, #0dcaf0);
-      color: #fff;
-      border-radius: 40px;
-    }
-
-    footer {
-      background: #0b1d2a;
-      color: #bbb;
-    }
-  </style>
-</head>
-<body>
-
-<!-- HERO -->
-<section class="hero-pantai text-center">
-  <div class="container">
-    <h1>Outbound Pantai Seru & Berkesan</h1>
-    <p class="lead my-4">Team Building · Fun Games · Adventure di Tepi Laut</p>
-    <a href="keseruan.html" class="btn btn-warning btn-lg rounded-pill">Lihat Keseruan</a>
+  <section class="hero-about-pantai">
+  <div class="hero-about-overlay">
+    <div class="hero-about-content">
+      <h1>Outbound Pantai</h1>
+      <p>
+        <a href="keseruan.html">Home</a>
+        <span>/</span>
+        Keseruan
+      </p>
+    </div>
   </div>
 </section>
+
+<style>
+  .hero-about-pantai {
+  margin: 32px;
+  height: 320px;               /* UKURAN SESUAI GAMBAR */
+  border-radius: 32px;         /* ROUND BESAR */
+  overflow: hidden;
+  background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80")
+              center center / cover no-repeat;
+  position: relative;
+}
+
+/* overlay gelap */
+.hero-about-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* konten tengah */
+.hero-about-content {
+  text-align: center;
+}
+
+.hero-about-content h1 {
+  color: #fff;
+  font-size: 44px;            /* mirip gambar */
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.hero-about-content p {
+  color: #f1f1f1;
+  font-size: 16px;
+  margin: 0;
+}
+
+.hero-about-content a {
+  color: #ffc107;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero-about-content span {
+  margin: 0 8px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hero-about-pantai {
+    margin: 16px;
+    height: 240px;            /* versi mobile */
+    border-radius: 24px;
+  }
+
+  .hero-about-content h1 {
+    font-size: 30px;
+  }
+}
+
+</style>
 
 <!-- SELAMAT DATANG -->
 <section id="welcome" class="welcome-section">
@@ -341,6 +355,8 @@
 }
 
 </style>
+
+
 
 <!-- KEUNGGULAN -->
 <section id="keunggulan" class="py-5 bg-light">
@@ -881,10 +897,7 @@
     margin-top: 10px;
   }
 }
-
-
 </style>
-
 
 <!-- GALLERY -->
 <section class="gallery py-5 bg-light">
@@ -985,6 +998,149 @@
     transform: translateY(-3px);
     box-shadow: 0 14px 35px rgba(13,110,253,.45);
     color: #fff;
+  }
+}
+
+</style>
+
+<!-- TIM OUTBOUND PANTAI -->
+<section id="tim-outbound-pantai" class="team-section py-5">
+  <div class="container">
+
+    <!-- H2 -->
+    <h2 class="team-title">
+      Tim Outbound Pantai Profesional
+    </h2>
+
+    <p class="team-lead">
+      Tim outbound pantai kami terdiri dari fasilitator, trainer, dan crew lapangan
+      yang berpengalaman dalam menangani berbagai program outbound pantai untuk
+      perusahaan, sekolah, dan komunitas. Setiap kegiatan dipandu secara aman,
+      terstruktur, dan penuh semangat.
+    </p>
+
+    <div class="row g-4 mt-4">
+
+      <!-- TEAM 1 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="team-card h-100">
+          <img src="img/Trainer Outbound.jpg" alt="Trainer Outbound Pantai" class="img-fluid">
+          <div class="team-content">
+            <h5>Trainer Outbound</h5>
+            <p>
+              Bertanggung jawab memandu program outbound pantai dengan metode
+              experiential learning yang menyenangkan dan edukatif.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- TEAM 2 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="team-card h-100">
+          <img src="img/Fasilitator Kegiatan.jpg" alt="Fasilitator Outbound Pantai" class="img-fluid">
+          <div class="team-content">
+            <h5>Fasilitator Kegiatan</h5>
+            <p>
+              Mendampingi peserta selama kegiatan outbound pantai agar aktivitas
+              berjalan aman, lancar, dan sesuai konsep.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- TEAM 3 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="team-card h-100">
+          <img src="img/Crew Lapangan.jpg" alt="Crew Lapangan Outbound Pantai" class="img-fluid">
+          <div class="team-content">
+            <h5>Crew Lapangan</h5>
+            <p>
+              Menyiapkan peralatan, area kegiatan, serta memastikan standar
+              keamanan selama outbound pantai berlangsung.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- TEAM 4 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="team-card h-100">
+          <img src="img/Koordinator Program.jpg" alt="Koordinator Outbound Pantai" class="img-fluid">
+          <div class="team-content">
+            <h5>Koordinator Program</h5>
+            <p>
+              Mengatur alur kegiatan outbound pantai, komunikasi klien, dan
+              memastikan program berjalan sesuai tujuan.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<style>
+  /* TEAM OUTBOUND PANTAI */
+.team-section {
+  background: #f8f9fa;
+  overflow-x: hidden;
+}
+
+.team-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.team-lead {
+  font-size: 16px;
+  color: #555;
+  max-width: 900px;
+  line-height: 1.8;
+}
+
+.team-card {
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 14px 35px rgba(0,0,0,.08);
+  height: 100%;
+}
+
+.team-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.team-content {
+  padding: 18px;
+}
+
+.team-content h5 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.team-content p {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: #555;
+  margin: 0;
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+  .team-title {
+    font-size: 24px;
+  }
+
+  .team-card img {
+    height: 200px;
   }
 }
 
