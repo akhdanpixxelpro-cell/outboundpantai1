@@ -93,7 +93,7 @@
   <div class="hero-overlay"></div>
 
   <div class="container hero-content text-center">
-    <h1>Tentang Kmai</h1>
+    <h1>Tentang Kami</h1>
     <p>Outbound pantai seru, aman, dan membangun kekompakan tim.</p>
 
     <div class="breadcrumb-custom">
@@ -108,7 +108,7 @@
   position: relative;
   background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80')
     center center / cover no-repeat;
-  height: 410px;
+  height: 310px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -342,6 +342,100 @@
   line-height: 1.6;
 }
 
+/* =========================
+   MOBILE SAFE (ANTI GOYANG)
+   ========================= */
+@media (max-width: 768px) {
+
+  /* KUNCI LAYOUT */
+  html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* ABOUT */
+  .about-pantai {
+    text-align: center;
+  }
+
+  .about-pantai h2 {
+    font-size: 22px;
+    line-height: 1.4;
+    margin-bottom: 16px;
+  }
+
+  .about-pantai p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .badge-about {
+    display: inline-block;
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+
+  .about-image img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  /* HISTORY */
+  .history-pantai {
+    overflow-x: hidden;
+  }
+
+  .history-pantai h2 {
+    font-size: 22px;
+  }
+
+  .history-card {
+    padding: 20px;
+    border-radius: 14px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .history-card h5 {
+    font-size: 16px;
+  }
+
+  .history-card p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
+/* EXTRA SMALL DEVICE */
+@media (max-width: 480px) {
+
+  .about-pantai h2 {
+    font-size: 20px;
+  }
+
+  .history-card {
+    padding: 18px;
+  }
+
+  .history-card h5 {
+    font-size: 15px;
+  }
+
+  .history-card p {
+    font-size: 13.5px;
+  }
+}
 </style>
 
 <!-- TENTANG KAMI LANJUTAN -->
@@ -445,6 +539,83 @@
   margin-bottom: 12px;
   color: #444;
 }
+
+/* =========================
+   RESPONSIVE MOBILE
+   ========================= */
+@media (max-width: 768px) {
+
+  /* TENTANG KAMI LANJUTAN */
+  #tentang-kami-lanjutan h2 {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+
+  #tentang-kami-lanjutan p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .value-card {
+    padding: 22px;
+    border-radius: 16px;
+  }
+
+  .value-icon {
+    font-size: 34px;
+    margin-bottom: 12px;
+  }
+
+  .value-card h5 {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+
+  /* KEUNGGULAN */
+  .keunggulan h3 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .keunggulan-list {
+    margin-top: 20px;
+  }
+
+  .keunggulan-list li {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .keunggulan img {
+    margin-top: 25px;
+    border-radius: 16px;
+  }
+}
+
+/* EXTRA SMALL DEVICE */
+@media (max-width: 480px) {
+
+  #tentang-kami-lanjutan h2 {
+    font-size: 20px;
+  }
+
+  .value-card {
+    padding: 20px;
+  }
+
+  .value-icon {
+    font-size: 30px;
+  }
+
+  .keunggulan h3 {
+    font-size: 20px;
+  }
+
+  .keunggulan-list li {
+    font-size: 14px;
+  }
+}
+
 
 </style>
 
@@ -558,6 +729,63 @@
 
 
 </style>
+
+<!-- CTA WhatsApp Scroll -->
+<a href="https://wa.me/6282211221909"
+   class="wa-scroll"
+   target="_blank"
+   aria-label="WhatsApp Layanan">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+
+<style>
+  .wa-scroll{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 62px;
+  height: 62px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.7);
+  transition: all .35s ease;
+}
+
+.wa-scroll img{
+  width: 34px;
+  filter: brightness(0) invert(1);
+}
+
+.wa-scroll.show{
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+.wa-scroll:hover{
+  transform: scale(1.1);
+}
+
+</style>
+
+<script>
+  const waBtn = document.querySelector('.wa-scroll');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      waBtn.classList.add('show');
+    } else {
+      waBtn.classList.remove('show');
+    }
+  });
+</script>
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
