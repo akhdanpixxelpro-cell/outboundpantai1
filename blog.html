@@ -195,19 +195,46 @@
  .blog-search {
   max-width: 420px;
   margin: 0 auto;
+  padding: 0 12px; /* ⬅ cegah nabrak container */
 }
 
 .blog-search-input {
-  padding: 14px 18px;
-  border-radius: 30px;
+  width: 100%;
+  box-sizing: border-box; /* ⬅ KUNCI UTAMA */
+
+  padding: 12px 16px;
+  height: 48px;
+
+  border-radius: 25px;
+  border: 2px solid #ddd;
+
   font-size: 15px;
-  border: 7px solid #ddd;
 }
 
 .blog-search-input:focus {
   border-color: #0d6efd;
+  outline: none;
   box-shadow: none;
 }
+
+.blog-search-input.form-control {
+  max-width: 100% !important;
+  min-width: 0 !important;
+}
+
+@media (max-width: 576px) {
+  .blog-search {
+    max-width: 100%;
+    padding: 0 16px;
+  }
+
+  .blog-search-input {
+    height: 44px;
+    font-size: 14px;
+  }
+}
+
+
 </style>
 
 
@@ -277,10 +304,130 @@
 
     </div>
 
+    
+    <!-- BLOG OUTBOUND PANTAI -->
+<section class="py-5 bg-light" id="blog">
+  <div class="container">
+
+    <!-- BLOG GRID -->
+    <div class="row g-4">
+
+      <!-- BLOG ITEM -->
+    <div class="col-lg-4 col-md-6 blog-item">
+        <div class="blog-card h-100">
+          <img src="img/23.jpg" alt="Outbound Pantai"
+               class="img-fluid blog-img">
+          <div class="blog-content p-4">
+            <span class="blog-date d-block mb-2">12 Januari 2026</span>
+            <h5>Outbound Pantai Profesional dengan Fasilitator Berpengalaman</h5>
+            <p class="text-muted">
+              Suasana pantai menghadirkan energi positif, tawa,
+              dan kebersamaan yang sulit dilupakan.
+            </p>
+            <a href="ka4.html" class="read-more">Baca Selengkapnya →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- BLOG ITEM -->
+     <div class="col-lg-4 col-md-6 blog-item">
+        <div class="blog-card h-100">
+          <img src="img/permainan-outbound-di-pantai-2-1024x683.webp"
+               alt="Outbound Pantai"
+               class="img-fluid blog-img">
+          <div class="blog-content p-4">
+            <span class="blog-date">5 Januari 2026</span>
+            <h5>Manfaat Outbound Pantai untuk Kekompakan Tim</h5>
+            <p class="text-muted">
+              Outbound pantai membantu membangun komunikasi,
+              kepercayaan, dan kerjasama antar peserta.
+            </p>
+            <a href="ka5.html" class="read-more">Baca Selengkapnya →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- BLOG ITEM -->
+       <div class="col-lg-4 col-md-6 blog-item">
+        <div class="blog-card h-100">
+          <img src="img/pantai4.avif"
+               alt="Outbound Pantai Seru"
+               class="img-fluid blog-img">
+          <div class="blog-content p-4">
+            <span class="blog-date d-block mb-2">24 Januari 2026</span>
+            <h5>Keseruan Outbound Pantai yang Tak Terlupakan</h5>
+            <p class="text-muted">
+              Outbound pantai menghadirkan pengalaman penuh tawa,
+              kebersamaan, dan energi positif di tepi laut.
+            </p>
+            <a href="ka6.html" class="read-more">Baca Selengkapnya →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- BLOG ITEM -->
+      <div class="col-lg-4 col-md-6 blog-item">
+        <div class="blog-card h-100">
+          <img src="img/pantai7.avif"
+               alt="Outbound Pantai Seru"
+               class="img-fluid blog-img">
+          <div class="blog-content p-4">
+            <span class="blog-date d-block mb-2">23 Desember 2025</span>
+            <h5>Menaklukkan Ombak Bersama</h5>
+            <p class="text-muted">
+              Cerita kebersamaan dan tantangan seru outbound
+              pantai yang penuh semangat.
+            </p>
+            <a href="ka7.html" class="read-more">Baca Selengkapnya →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- BLOG ITEM -->
+      <div class="col-lg-4 col-md-6 blog-item">
+        <div class="blog-card h-100">
+          <img src="img/Outbound Pantai Sekolah.jpg"
+               alt="Outbound Pantai Sekolah"
+               class="img-fluid blog-img">
+          <div class="blog-content p-4">
+            <span class="blog-date d-block mb-2">13 Desember 2025</span>
+            <h5>Outbound Pantai Sekolah</h5>
+            <p class="text-muted">
+              Program outbound pantai untuk siswa yang edukatif,
+              menyenangkan, dan membangun karakter.
+            </p>
+            <a href="ka9.html" class="read-more">Baca Selengkapnya →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- BLOG ITEM -->
+       <div class="col-lg-4 col-md-6 blog-item">
+        <div class="blog-card h-100">
+          <img src="img/libur.jpg"
+               alt="Permainan Pasir"
+               class="img-fluid blog-img">
+          <div class="blog-content p-4">
+            <span class="blog-date d-block mb-2">28 Desember 2025</span>
+            <h5>Permainan Pasir: Lomba Istana Pasir</h5>
+            <p class="text-muted">
+              Aktivitas permainan pasir yang seru untuk melatih
+              kreativitas dan kekompakan tim.
+            </p>
+            <a href="ka8.html" class="read-more">Baca Selengkapnya →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
     <!-- BUTTON -->
     <div class="text-center mt-5">
-      <a href="blog2.html" class="btn btn-outline-primary px-4 py-2">
-        Lihat Semua
+      <a href="program.html" class="btn btn-outline-primary px-4 py-2">
+        Lihat Program
       </a>
     </div>
 
