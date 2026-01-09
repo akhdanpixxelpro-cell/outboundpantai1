@@ -1152,77 +1152,117 @@ KEUNGGULAN
 </style>
 
 <!-- TIM OUTBOUND PANTAI -->
-<section id="tim-outbound-pantai" class="team-section py-5">
+<section id="tim-outbound-pantai"
+         class="team-section py-5"
+         role="region"
+         aria-labelledby="team-title">
+
   <div class="container">
 
     <!-- H2 -->
-    <h2 class="team-title">
+    <h2 id="team-title" class="team-title">
       Tim Outbound Pantai Profesional
     </h2>
 
-    <p class="team-lead">
+    <p class="team-lead" id="team-desc">
       Tim outbound pantai kami terdiri dari fasilitator, trainer, dan crew lapangan
       yang berpengalaman dalam menangani berbagai program outbound pantai untuk
       perusahaan, sekolah, dan komunitas. Setiap kegiatan dipandu secara aman,
       terstruktur, dan penuh semangat.
     </p>
 
-    <div class="row g-4 mt-4">
+    <div class="row g-4 mt-4" role="list" aria-describedby="team-desc">
 
       <!-- TEAM 1 -->
-      <div class="col-lg-3 col-md-6">
-        <div class="team-card h-100">
-          <img src="img/Trainer Outbound.jpg" alt="Trainer Outbound Pantai" class="img-fluid">
+      <div class="col-lg-3 col-md-6" role="listitem">
+        <article class="team-card h-100"
+                 role="article"
+                 aria-labelledby="team1-title">
+
+          <img src="img/Trainer Outbound.jpg"
+               alt="Trainer outbound pantai sedang memandu peserta"
+               class="img-fluid"
+               width="400"
+               height="220"
+               loading="lazy">
+
           <div class="team-content">
-            <h5>Trainer Outbound</h5>
+            <h5 id="team1-title">Trainer Outbound</h5>
             <p>
               Bertanggung jawab memandu program outbound pantai dengan metode
               experiential learning yang menyenangkan dan edukatif.
             </p>
           </div>
-        </div>
+        </article>
       </div>
 
       <!-- TEAM 2 -->
-      <div class="col-lg-3 col-md-6">
-        <div class="team-card h-100">
-          <img src="img/Fasilitator Kegiatan.jpg" alt="Fasilitator Outbound Pantai" class="img-fluid">
+      <div class="col-lg-3 col-md-6" role="listitem">
+        <article class="team-card h-100"
+                 role="article"
+                 aria-labelledby="team2-title">
+
+          <img src="img/Fasilitator Kegiatan.jpg"
+               alt="Fasilitator outbound pantai mendampingi peserta"
+               class="img-fluid"
+               width="400"
+               height="220"
+               loading="lazy">
+
           <div class="team-content">
-            <h5>Fasilitator Kegiatan</h5>
+            <h5 id="team2-title">Fasilitator Kegiatan</h5>
             <p>
               Mendampingi peserta selama kegiatan outbound pantai agar aktivitas
               berjalan aman, lancar, dan sesuai konsep.
             </p>
           </div>
-        </div>
+        </article>
       </div>
 
       <!-- TEAM 3 -->
-      <div class="col-lg-3 col-md-6">
-        <div class="team-card h-100">
-          <img src="img/Crew Lapangan.jpg" alt="Crew Lapangan Outbound Pantai" class="img-fluid">
+      <div class="col-lg-3 col-md-6" role="listitem">
+        <article class="team-card h-100"
+                 role="article"
+                 aria-labelledby="team3-title">
+
+          <img src="img/Crew Lapangan.jpg"
+               alt="Crew lapangan outbound pantai menyiapkan peralatan"
+               class="img-fluid"
+               width="400"
+               height="220"
+               loading="lazy">
+
           <div class="team-content">
-            <h5>Crew Lapangan</h5>
+            <h5 id="team3-title">Crew Lapangan</h5>
             <p>
               Menyiapkan peralatan, area kegiatan, serta memastikan standar
               keamanan selama outbound pantai berlangsung.
             </p>
           </div>
-        </div>
+        </article>
       </div>
 
       <!-- TEAM 4 -->
-      <div class="col-lg-3 col-md-6">
-        <div class="team-card h-100">
-          <img src="img/Koordinator Program.jpg" alt="Koordinator Outbound Pantai" class="img-fluid">
+      <div class="col-lg-3 col-md-6" role="listitem">
+        <article class="team-card h-100"
+                 role="article"
+                 aria-labelledby="team4-title">
+
+          <img src="img/Koordinator Program.jpg"
+               alt="Koordinator program outbound pantai mengatur jalannya kegiatan"
+               class="img-fluid"
+               width="400"
+               height="220"
+               loading="lazy">
+
           <div class="team-content">
-            <h5>Koordinator Program</h5>
+            <h5 id="team4-title">Koordinator Program</h5>
             <p>
               Mengatur alur kegiatan outbound pantai, komunikasi klien, dan
               memastikan program berjalan sesuai tujuan.
             </p>
           </div>
-        </div>
+        </article>
       </div>
 
     </div>
@@ -1241,11 +1281,12 @@ KEUNGGULAN
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 14px;
+  color: #111; /* kontras WCAG */
 }
 
 .team-lead {
   font-size: 16px;
-  color: #555;
+  color: #333; /* kontras WCAG */
   max-width: 900px;
   line-height: 1.8;
 }
@@ -1256,6 +1297,12 @@ KEUNGGULAN
   overflow: hidden;
   box-shadow: 0 14px 35px rgba(0,0,0,.08);
   height: 100%;
+}
+
+/* Fokus keyboard (WCAG 2.4.7) */
+.team-card:focus-within {
+  outline: 3px solid #0d6efd;
+  outline-offset: 3px;
 }
 
 .team-card img {
@@ -1272,12 +1319,13 @@ KEUNGGULAN
   font-size: 17px;
   font-weight: 600;
   margin-bottom: 8px;
+  color: #111;
 }
 
 .team-content p {
   font-size: 14.5px;
   line-height: 1.6;
-  color: #555;
+  color: #333;
   margin: 0;
 }
 
