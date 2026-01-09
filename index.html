@@ -810,115 +810,68 @@ KEUNGGULAN
     }
 }
 
-/* ===== WCAG FOCUS & READABILITY ===== */
-.btn-wa:focus-visible,
-.package-card:focus-within {
-    outline: 3px solid #00a8e8;
-    outline-offset: 4px;
-}
-
-/* Ikon tidak dibaca screen reader */
-.main-icon {
-    user-select: none;
-}
-
-/* Kontras teks aman */
-.feature-list li,
-.title-area p {
-    color: #e5edf5;
-}
     
 </style>
 
-<section class="beach-outbound-section"
-         role="region"
-         aria-labelledby="outbound-title"
-         aria-describedby="outbound-desc">
-
+<section class="beach-outbound-section">
     <div class="wrapper">
-
         <div class="title-area">
-            <h2 id="outbound-title" style="color:#0dcaf0;">Premium Beach Outbound</h2>
-            <p id="outbound-desc">
-                Eksklusifitas dan Kenyamanan untuk Team Building Perusahaan Anda
-            </p>
+            <h2 style="color: #0dcaf0;">Premium Beach Outbound</h2>
+            <p>Eksklusifitas dan Kenyamanan untuk Team Building Perusahaan Anda</p>
         </div>
 
-        <div class="package-grid" role="list">
-
-            <!-- SILVER -->
-            <article class="package-card" role="listitem" aria-labelledby="pkg-silver">
-                <div class="main-icon" aria-hidden="true">😶‍🌫️</div>
-
-                <h3 class="pkg-name" id="pkg-silver">Silver Coast</h3>
+        <div class="package-grid">
+            <div class="package-card">
+                <div class="main-icon"><i lass="fab fa-whatsapp"></i>😶‍🌫️</div>
+                <h3 class="pkg-name">Silver Coast</h3>
                 <div class="pkg-price">150K <span>/pax</span></div>
-
                 <ul class="feature-list">
-                    <li>5 Fun Games Kompetitif</li>
-                    <li>Game Master Profesional</li>
-                    <li>Makan Siang Premium Box</li>
-                    <li>Free Flow Mineral Water</li>
-                    <li>Tim Medis Lapangan</li>
+                    <li><i class="fas fa-flag-checkered"></i> 5 Fun Games Kompetitif</li>
+                    <li><i class="fas fa-microphone-alt"></i> Game Master Profesional</li>
+                    <li><i class="fas fa-utensils"></i> Makan Siang Premium Box</li>
+                    <li><i class="fas fa-bottle-water"></i> Free Flow Mineral Water</li>
+                    <li><i class="fas fa-medkit"></i> Tim Medis Lapangan</li>
                 </ul>
-
-                <a class="btn-wa"
-                   href="https://wa.me/6282211221909?text=Halo,%20saya%20tertarik%20paket%20Silver%20Coast"
-                   aria-label="Booking paket Silver Coast melalui WhatsApp">
-                    Booking via WhatsApp
+                <a href="https://wa.me/6282211221909?text=Halo,%20saya%20tertarik%20paket%20Silver%20Coast" class="btn-wa">
+                    <i class="fab fa-whatsapp"></i> Booking via WA
                 </a>
-            </article>
+            </div>
 
-            <!-- GOLD -->
-            <article class="package-card"
-                     role="listitem"
-                     aria-labelledby="pkg-gold"
-                     style="border-color: var(--accent-blue); background: rgba(0, 168, 232, 0.05);">
-
-                <div class="main-icon" aria-hidden="true">🪙</div>
-
-                <h3 class="pkg-name" id="pkg-gold">Gold Team Work</h3>
+            <div class="package-card" style="border-color: var(--accent-blue); background: rgba(0, 168, 232, 0.05);">
+                <div class="main-icon" style="background: var(--accent-blue); color: var(--navy-dark);"><i class="fas fa-star"></i>🪙</div>
+                <h3 class="pkg-name">Gold Team Work</h3>
                 <div class="pkg-price">350K <span>/pax</span></div>
-
                 <ul class="feature-list">
-                    <li>Full Team Building System</li>
-                    <li>Makan Siang Prasmanan</li>
-                    <li>Dokumentasi Foto & Video</li>
-                    <li>Banner Vinyl 4x1 Meter</li>
-                    <li>Kaos Jersey Dry-Fit</li>
+                    <li><i class="fas fa-users"></i> Full Team Building System</li>
+                    <li><i class="fas fa-buffet"></i> Makan Siang Prasmanan</li>
+                    <li><i class="fas fa-camera"></i> Dokumentasi Foto & Video</li>
+                    <li><i class="fas fa-scroll"></i> Banner Vinyl 4x1 Meter</li>
+                    <li><i class="fas fa-tshirt"></i> Kaos Jersey Dry-Fit</li>
                 </ul>
-
-                <a class="btn-wa"
-                   href="https://wa.me/6282211221909?text=Halo,%20saya%20tertarik%20paket%20Gold%20Team"
-                   aria-label="Booking paket Gold Team Work melalui WhatsApp">
-                    Booking via WhatsApp
+                <a href="https://wa.me/6282211221909?text=Halo,%20saya%20tertarik%20paket%20Gold%20Team" class="btn-wa">
+                    <i class="fab fa-whatsapp"></i> Booking via WA
                 </a>
-            </article>
+            </div>
 
-            <!-- PLATINUM -->
-            <article class="package-card" role="listitem" aria-labelledby="pkg-platinum">
-                <div class="main-icon" aria-hidden="true">🚤</div>
-
-                <h3 class="pkg-name" id="pkg-platinum">Platinum Luxury</h3>
+            <div class="package-card">
+                <div class="main-icon"><i class="fas fa-gem"></i>🚤</div>
+                <h3 class="pkg-name">Platinum Luxury</h3>
                 <div class="pkg-price">750K <span>/pax</span></div>
-
                 <ul class="feature-list">
-                    <li>Resort Bintang 4 (Day Use)</li>
-                    <li>Yacht / Kapal Jelajah</li>
-                    <li>BBQ Dinner & Api Unggun</li>
-                    <li>Bus Pariwisata Eksekutif</li>
-                    <li>Drone Video Cinematic</li>
+                    <li><i class="fas fa-hotel"></i> Resort Bintang 4 (Day Use)</li>
+                    <li><i class="fas fa-ship"></i> Yacht / Kapal Jelajah</li>
+                    <li><i class="fas fa-fire"></i> BBQ Dinner & Api Unggun</li>
+                    <li><i class="fas fa-bus-alt"></i> Bus Pariwisata Eksekutif</li>
+                    <li><i class="fas fa-helicopter"></i> Drone Video Cinematic</li>
                 </ul>
-
-                <a class="btn-wa"
-                   href="https://wa.me/6282211221909?text=Halo,%20saya%20tertarik%20paket%20Platinum%20Luxury"
-                   aria-label="Booking paket Platinum Luxury melalui WhatsApp">
-                    Booking via WhatsApp
+                <a href="https://wa.me/6282211221909?text=Halo,%20saya%20tertarik%20paket%20Platinum%20Luxury" class="btn-wa">
+                    <i class="fab fa-whatsapp"></i> Booking via WA
                 </a>
-            </article>
-
+            </div>
         </div>
     </div>
 </section>
+
 
 
 <!-- LANJUTAN DETAIL OUTBOUND PANTAI -->
