@@ -72,15 +72,15 @@
   <div class="container">
 
     <a class="navbar-brand d-flex align-items-center" href="index.html" aria-label="Outbound Pantai">
-      <img 
-        src="img/logo.jpg"
-        alt="Logo Outbound Pantai"
-        class="logo-navbar"
-        width="120"
-        height="40"
-        loading="eager"
-      >
-    </a>
+  <img 
+    src="img/logo.jpg"
+    alt="Logo Outbound Pantai"
+    class="logo-navbar"
+    width="120"
+    height="40"
+    loading="eager"
+    decoding="async">
+</a>
 
     <button class="navbar-toggler" type="button"
       data-bs-toggle="collapse" data-bs-target="#navbarPantai"
@@ -143,9 +143,12 @@
   }
 }
 
+/* LOGO PERFORMANCE LOCK */
 .logo-navbar {
-  height: 40px;        /* atur sesuai kebutuhan */
-  width: auto;
+  display: block;
+  width: 120px;
+  height: 40px;
+  aspect-ratio: 120 / 40;
   object-fit: contain;
 }
 
