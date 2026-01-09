@@ -922,18 +922,24 @@ KEUNGGULAN
 
 
 <!-- LANJUTAN DETAIL OUTBOUND PANTAI -->
-<section id="detail-outbound-pantai" class="detail-section py-5">
+<section id="detail-outbound-pantai"
+         class="detail-section py-5"
+         role="region"
+         aria-labelledby="detail-title"
+         aria-describedby="detail-desc-1">
+
   <div class="container">
 
     <div class="row align-items-center g-5">
 
       <!-- TEXT -->
       <div class="col-lg-6">
-        <h2 class="detail-title">
-        Kegiatan Outbound Pantai
+
+        <h2 id="detail-title" class="detail-title">
+          Kegiatan Outbound Pantai
         </h2>
 
-        <p class="detail-desc">
+        <p id="detail-desc-1" class="detail-desc">
           Setiap paket outbound pantai dirancang secara profesional dengan
           konsep fun, edukatif, dan penuh kebersamaan. Aktivitas disesuaikan
           dengan usia, jumlah peserta, dan tujuan acara.
@@ -945,20 +951,25 @@ KEUNGGULAN
           dalam suasana alam terbuka yang menyegarkan.
         </p>
 
-        <ul class="detail-list">
-          <li>Konsep outbound fleksibel & custom</li>
-          <li>Trainer & fasilitator berpengalaman</li>
-          <li>Peralatan lengkap & standar keamanan</li>
-          <li>Cocok untuk perusahaan, sekolah, dan komunitas</li>
+        <ul class="detail-list" role="list">
+          <li role="listitem">Konsep outbound fleksibel & custom</li>
+          <li role="listitem">Trainer & fasilitator berpengalaman</li>
+          <li role="listitem">Peralatan lengkap & standar keamanan</li>
+          <li role="listitem">Cocok untuk perusahaan, sekolah, dan komunitas</li>
         </ul>
 
-        <div class="detail-btn">
-          <a href="program.html" class="btn-detail">
+        <div class="detail-btn" role="group" aria-label="Aksi detail outbound pantai">
+          <a href="program.html"
+             class="btn-detail"
+             aria-label="Lihat paket outbound pantai">
             Lihat Paket
           </a>
+
           <a href="https://wa.me/6282211221909"
              target="_blank"
-             class="btn-wa">
+             rel="noopener"
+             class="btn-wa"
+             aria-label="Konsultasi outbound pantai melalui WhatsApp">
             Konsultasi WhatsApp
           </a>
         </div>
@@ -967,8 +978,11 @@ KEUNGGULAN
       <!-- IMAGE -->
       <div class="col-lg-6">
         <img src="img/pantai6.jpg"
-             alt="Detail Outbound Pantai"
-             class="img-fluid rounded-4 shadow">
+             alt="Peserta sedang mengikuti kegiatan outbound pantai di tepi laut"
+             class="img-fluid rounded-4 shadow"
+             width="800"
+             height="600"
+             loading="lazy">
       </div>
 
     </div>
@@ -1092,6 +1106,19 @@ KEUNGGULAN
     margin-top: 10px;
   }
 }
+
+/* ===== WCAG ACCESSIBILITY FIX ===== */
+#detail-outbound-pantai a:focus-visible {
+  outline: 3px solid #0d6efd;
+  outline-offset: 3px;
+}
+
+/* Kontras teks WCAG */
+#detail-outbound-pantai .detail-desc,
+#detail-outbound-pantai .detail-list li {
+  color: #2b2b2b;
+}
+
 </style>
 
 <!-- GALLERY -->
